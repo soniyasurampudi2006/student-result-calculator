@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Result Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Student Result Calculator</h1>
+
+    <form id="resultForm">
+      <label for="studentName">Student Name</label>
+      <input id="studentName" type="text" placeholder="Enter your name" required>
+
+      <label for="rollNumber">Roll Number</label>
+      <input id="rollNumber" type="text" placeholder="Enter your roll number" required>
+
+      <h2>Enter Marks (out of 100)</h2>
+
+      <label for="subject1">Subject 1</label>
+      <input id="subject1" type="number" min="0" max="100" required>
+
+      <label for="subject2">Subject 2</label>
+      <input id="subject2" type="number" min="0" max="100" required>
+
+      <label for="subject3">Subject 3</label>
+      <input id="subject3" type="number" min="0" max="100" required>
+
+      <label for="subject4">Subject 4</label>
+      <input id="subject4" type="number" min="0" max="100" required>
+
+      <label for="subject5">Subject 5</label>
+      <input id="subject5" type="number" min="0" max="100" required>
+
+      <button type="submit">Calculate Result</button>
+    </form>
+
+    <section id="result" class="result hidden" aria-live="polite"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
